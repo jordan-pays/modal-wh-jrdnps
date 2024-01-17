@@ -1,8 +1,21 @@
 {
-  "name": "mymodalcomponents",
+  "name": "modal-wh-jrdnps",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/modal-wh-jrdnps.umd.cjs",
+  "module": "./dist/modal-wh-jrdnps.js",
+  "exports": {
+    ".": {
+      "import": "./dist/modal-wh-jrdnps.js",
+      "require": "./dist/modal-wh-jrdnps.umd.cjs"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
