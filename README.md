@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <button type="button" onClick={=>()=>toggle()}></button>
+      <button type="button" onClick={()=>toggle()}></button>
       <Modal isOpen={openModal} toggle={toggle}>
           <div>Your modal body hir</div>
         </Modal>

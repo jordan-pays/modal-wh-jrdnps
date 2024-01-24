@@ -1,11 +1,23 @@
 {
   "name": "modal-wh-jrdnps",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/modal-wh-jrdnps.umd.cjs",
   "module": "./dist/modal-wh-jrdnps.js",
+  "homepage": "https://github.com/jordan-pays/modal-wh-jrdnps",
+  "repository": {
+    "type": "github",
+    "url": "git@github.com:jordan-pays/modal-wh-jrdnps.git"
+  },
+  "author": "Pays Jordan",
+  "keywords": [
+    "github",
+    "repositories"
+  ],
   "exports": {
     ".": {
       "import": "./dist/modal-wh-jrdnps.js",
