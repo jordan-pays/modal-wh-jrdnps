@@ -47,6 +47,7 @@ export default function App() {
 | `styleContainer`                 | `any`                |  `null`                        | Style applied to the modal container          |
 | `styleContent`                   | `any`                |  `null`                        | Style applied to the modal content            |
 | `renderClose`                    | `node`               |  `null`                        | You can render your own close button          |
+| `closeBtnLabel`                  | `string`             |  `close modal`                 | You can provide your own transcription label  |
 
 
 ## Customisation

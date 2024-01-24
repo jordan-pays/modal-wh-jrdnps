@@ -8,6 +8,7 @@ function Modal({
   styleContent,
   renderClose,
   toggle,
+  closeBtnLabel = "close modal"
 }) {
 
   document.addEventListener("keydown", (e) => {
@@ -25,7 +26,7 @@ function Modal({
           {renderClose ? (
             renderClose
           ) : (
-            <button type="button" title="close modal" aria-label="close modal" tabIndex={0} className="jrdnps-close-btn" onClick={toggle}>
+            <button type="button" aria-label={closeBtnLabel} tabIndex={0} className="jrdnps-close-btn" onClick={toggle}>
             </button>
           )}
         </div>
