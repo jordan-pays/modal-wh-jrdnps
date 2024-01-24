@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Modal.css";
 
 function Modal({
@@ -9,6 +9,14 @@ function Modal({
   renderClose,
   toggle,
 }) {
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key == "Escape" && isOpen) {
+      toggle()
+    }
+  })
+
+
   return (
     isOpen && (
       <div className="jrdnps-modal-container" style={{ ...styleContainer }}>
@@ -17,8 +25,8 @@ function Modal({
           {renderClose ? (
             renderClose
           ) : (
-            <div className="jrdnps-close-btn" onClick={toggle}>
-            </div>
+            <button type="button" title="close modal" aria-label="close modal" tabIndex={0} className="jrdnps-close-btn" onClick={toggle}>
+            </button>
           )}
         </div>
       </div>
